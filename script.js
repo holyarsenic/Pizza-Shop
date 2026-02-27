@@ -13,7 +13,7 @@ function navAnimation() {
     scale: 0.8
   })
 
-    .from(".nav .tabs .tab .resposive-nab", {
+    .from(".nav .tabs .tab", {
       y: -30,
       opacity: 0,
       stagger: 0.15

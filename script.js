@@ -75,7 +75,10 @@ function navAnimation() {
 
 }
 
-navAnimation();
+window.addEventListener("load", () => {
+  navAnimation();
+  ScrollTrigger.refresh();
+});
 
 const menuButton = document.querySelector(".resposive-nab");
 const menuBar = document.querySelector(".menu-bar");

@@ -243,6 +243,7 @@ header .menu-bar {
   width: 40%;
   overflow: hidden;
   border-radius: 12px;
+  border-bottom: 1px solid #111;
 }
 
 .about-us .cover1 img {
@@ -454,8 +455,16 @@ header .menu-bar {
 
   /*about us*/
   .about-us {
+    background-color: rgb(196, 61, 61);
     padding: 4rem 5vw;
   }
+
+  .about-us h2::after {
+    width: 100px;
+    height: 3px;
+    background: #111;
+  }
+
 
   .container {
     flex-direction: column;
@@ -465,6 +474,11 @@ header .menu-bar {
   .container .text,
   .about-us .cover1 {
     width: 100%;
+    box-shadow: 0 10px 20px #111;
+  }
+
+  .container .text:hover {
+    box-shadow: 0 15px 40px #111;
   }
 
   /*menu*/

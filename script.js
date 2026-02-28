@@ -1,7 +1,5 @@
 function navAnimation() {
 
-  gsap.registerPlugin(ScrollTrigger);
-
   const tl = gsap.timeline({
     defaults: {
       duration: 0.8,
@@ -50,6 +48,9 @@ function navAnimation() {
       opacity: 0,
       scale: 0.9
     }, "-=0.6");
+
+
+  gsap.registerPlugin(ScrollTrigger);
 
   gsap.utils.toArray(".about-us .container")
     .forEach((container) => {

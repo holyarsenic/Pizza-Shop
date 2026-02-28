@@ -65,7 +65,7 @@ function navAnimation() {
         scrollTrigger: {
           trigger: container,
           start: "top 85%",
-          once: true,              // ⭐ DESTROY AFTER PLAY
+          once: true,
           fastScrollEnd: true
         }
       });

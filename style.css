@@ -24,7 +24,7 @@ body {
   background-color: rgb(196, 61, 61);
   padding: 1rem 2rem;
   position: fixed;
-  top: 0%;
+  top: 0;
   z-index: 100;
 }
 
@@ -71,7 +71,7 @@ header .menu-bar {
   right: -100%;
   width: 70vw;
   height: 100vh;
-  background: rgba(17, 17, 17, 0.97);
+  background: rgba(17, 17, 17, 0.80);
   backdrop-filter: blur(12px);
   z-index: 200;
   padding: 8vh 4vw;
@@ -79,7 +79,7 @@ header .menu-bar {
   justify-content: center;
   align-items: center;
   border-left: 2px solid #ff3c00;
-  transition: right 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .menu-bar .resp-tabs {
@@ -107,7 +107,6 @@ header .menu-bar {
 
 .menu-bar .resp-tabs li a:hover {
   color: #ff3c00;
-  transform: scale(1.1);
 }
 
 .menu-bar .resp-tabs li a::after {
@@ -193,7 +192,7 @@ header .menu-bar {
 .about-us {
   border-top: 2px solid red;
   min-height: 100vh;
-  background: #111;
+  background-color: rgb(163, 45, 45);
   color: white;
   padding: 6rem 8rem;
 }
@@ -208,9 +207,9 @@ header .menu-bar {
 
 .about-us h2::after {
   content: "";
-  width: 80px;
+  width: 100px;
   height: 3px;
-  background: red;
+  background: #111;
   display: block;
   margin: 10px auto;
 }
@@ -232,18 +231,21 @@ header .menu-bar {
   border-radius: 12px;
   border-bottom: 5px solid red;
   transition: 0.4s ease;
+  box-shadow: 0 10px 20px #111;
 }
 
 .container .text:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(255, 0, 0, 0.3);
+  box-shadow: 0 15px 40px #111;
 }
 
 .about-us .cover1 {
   width: 40%;
   overflow: hidden;
   border-radius: 12px;
+  box-shadow: 0 10px 20px #111;
   border-bottom: 1px solid #111;
+  transition: 0.4s ease;
 }
 
 .about-us .cover1 img {
@@ -255,6 +257,10 @@ header .menu-bar {
 
 .about-us .cover1:hover img {
   transform: scale(1.15);
+}
+
+.about-us .cover1:hover {
+  box-shadow: 0 15px 40px #111;
 }
 
 /*menu*/
@@ -270,7 +276,7 @@ header .menu-bar {
   text-align: center;
   font-size: 3rem;
   letter-spacing: 3px;
-  margin-bottom: 4rem;
+  margin-bottom: 7rem;
 }
 
 .menu h3::after {
@@ -366,15 +372,14 @@ header .menu-bar {
 /*contact*/
 
 .contact {
-  min-height: 100vh;
+  min-height: 50vh;
   background-color: #1a1a1a;
-  ;
   color: white;
   padding: 3rem 10rem;
 }
 
 .call {
-  margin-top: 10rem;
+  margin-top: 4rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -445,6 +450,11 @@ header .menu-bar {
     font-size: 1.1rem;
     border-radius: 20px;
   }
+
+  .hero-section .text .button1:hover {
+    border-radius: 20px;
+  }
+
 
   .hero-section .text .button2 {
     font-size: 1.1rem;

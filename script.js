@@ -92,6 +92,7 @@ function navAnimation() {
     });
 
   });
+
 }
 
 navAnimation();
@@ -108,3 +109,5 @@ menuButton.addEventListener("click", (e) => {
 document.addEventListener("click", () => {
   menuBar.classList.remove("active");
 });
+
+

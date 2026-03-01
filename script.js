@@ -49,28 +49,24 @@ function navAnimation() {
       scale: 0.9
     }, "-=0.6");
 
-
   gsap.registerPlugin(ScrollTrigger);
 
-  gsap.utils.toArray(".about-us .container")
-    .forEach((container) => {
+  gsap.utils.toArray(".about-us .container").forEach((container) => {
 
-      const text = container.querySelector(".text");
-      const image = container.querySelector(".cover1");
+    gsap.from(container.children, {
+      y: 50,
+      opacity: 0,
+      duration: 0.8,
+      ease: "power2.out",
 
-      gsap.from([text, image], {
-        y: 50,
-        opacity: 0,
-        duration: 0.8,
-
-        scrollTrigger: {
-          trigger: container,
-          start: "top 85%",
-          once: true,
-        }
-      });
-
+      scrollTrigger: {
+        trigger: container,
+        start: "top 85%",
+        once: true
+      }
     });
+
+  });
 
 }
 navAnimation();

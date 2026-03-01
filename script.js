@@ -67,18 +67,13 @@ function navAnimation() {
           trigger: container,
           start: "top 85%",
           once: true,
-          fastScrollEnd: true
         }
       });
 
     });
 
 }
-
-window.addEventListener("load", () => {
-  navAnimation();
-  ScrollTrigger.refresh();
-});
+navAnimation();
 
 const menuButton = document.querySelector(".resposive-nab");
 const menuBar = document.querySelector(".menu-bar");

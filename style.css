@@ -125,6 +125,115 @@ header .menu-bar {
   width: 100%;
 }
 
+/* LOGIN PAGE */
+
+.login-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none;
+}
+
+.signin-page {
+  min-width: 25vw;
+  background: #1a1a1a;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  border-bottom: 4px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+  position: relative;
+}
+
+.signin-page .mascot {
+  align-self: center;
+  width: 40%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.signin-page .mascot img {
+  height: 100px;
+}
+
+.signin-page h4 {
+  position: absolute;
+  text-align: center;
+  font-size: 1.7rem;
+  color: white;
+  top: 23%;
+  left: 37%;
+}
+
+.input-box {
+  width: 100%;
+  padding: 0.7rem;
+  outline: none;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+  border: 1px solid #333;
+}
+
+.input-box:focus {
+  border: 1px solid red;
+}
+
+.signin-page a {
+  color: #aaa;
+  cursor: pointer;
+}
+
+.forgot-link:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+
+.forgot-link {
+  margin-top: -1.9rem;
+  font-size: 0.7rem;
+  margin-left: 6px;
+}
+
+.acc-crt {
+  font-size: 0.8rem;
+}
+
+.crtacc-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.crtacc-btn button {
+  border: none;
+  padding: 0.5rem 1rem;
+  background: #ff4d4d;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.crtacc-btn button:hover {
+  transform: scale(1.05);
+}
+
+.login-page.show {
+  display: flex;
+}
+
 /*hero-section*/
 
 .hero-section {
@@ -298,13 +407,10 @@ header .menu-bar {
 .order {
   flex: 1 1 calc(33.33% - 25px);
   height: 420px;
-
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-
   border-radius: 15px;
   padding: 1rem;
-
   transition: 0.4s ease;
   overflow: hidden;
 }
@@ -405,7 +511,7 @@ header .menu-bar {
   padding: 0.3rem 1rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
 
   /*Nav*/
   .nav {
@@ -417,13 +523,39 @@ header .menu-bar {
   }
 
   .nav .sign-in {
-    display: none;
+    position: absolute;
+    right: 20%;
   }
 
   .nav .resposive-nab {
     display: flex;
     color: white;
   }
+
+  /*login Page*/
+
+  .signin-page {
+    min-width: 60vw;
+  }
+
+  .signin-page .mascot {
+    width: 40%;
+    height: 80px;
+  }
+
+  .signin-page .mascot img {
+    height: 80px;
+  }
+
+  .acc-crt {
+    font-size: 0.7rem;
+  }
+
+  .crtacc-btn button {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+  }
+
 
   /*hero-section*/
   .hero-section {

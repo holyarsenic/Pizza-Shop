@@ -84,4 +84,21 @@ document.addEventListener("click", () => {
   menuBar.classList.remove("active");
 });
 
+const signIn = document.querySelector(".sign-in .login");
+const loginPage = document.querySelector(".login-page");
+const signInBox = document.querySelector(".signin-page");
+
+signIn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  loginPage.classList.toggle("show");
+});
+
+loginPage.addEventListener("click", () => {
+  loginPage.classList.remove("show");
+});
+
+signInBox.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+
 

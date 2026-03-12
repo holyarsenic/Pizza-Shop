@@ -1,3 +1,4 @@
+
 function navAnimation() {
 
   const tl = gsap.timeline({
@@ -69,7 +70,34 @@ function navAnimation() {
   });
 
 }
+
+function cursor() {
+  const cursorCircle = document.querySelector(".cursor");
+
+  window.addEventListener("mousemove", (dets) => {
+    cursorCircle.style.transform =
+      `translate(${dets.clientX}px, ${dets.clientY}px)`;
+  });
+
+  document.addEventListener("mouseleave", () => {
+    gsap.to(cursorCircle, {
+      opacity: 0,
+      duration: 0.2
+    });
+  });
+
+  document.addEventListener("mouseenter", () => {
+    gsap.to(cursorCircle, {
+      opacity: 1,
+      duration: 0.2
+    });
+  });
+}
+
+cursor();
 navAnimation();
+
+
 
 const menuButton = document.querySelector(".resposive-nab");
 const menuBar = document.querySelector(".menu-bar");

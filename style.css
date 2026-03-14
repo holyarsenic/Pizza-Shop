@@ -570,6 +570,7 @@ header .menu-bar {
 
   .cursor {
     display: none;
+    opacity: 0;
   }
 
   /*hero-section*/

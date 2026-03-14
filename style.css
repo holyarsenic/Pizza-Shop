@@ -567,6 +567,9 @@ header .menu-bar {
     font-size: 0.7rem;
   }
 
+  .cursor {
+    display: none;
+  }
 
   /*hero-section*/
   .hero-section {

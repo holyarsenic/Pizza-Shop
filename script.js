@@ -75,6 +75,7 @@ function cursor() {
   const cursorCircle = document.querySelector(".cursor");
 
   window.addEventListener("mousemove", (dets) => {
+    cursorCircle.style.display = `flex`;
     cursorCircle.style.transform =
       `translate(${dets.clientX}px, ${dets.clientY}px)`;
   });

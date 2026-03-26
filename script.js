@@ -1,4 +1,4 @@
-
+gsap.registerPlugin(ScrollTrigger);
 function navAnimation() {
 
   const tl = gsap.timeline({
@@ -50,23 +50,57 @@ function navAnimation() {
       scale: 0.9
     }, "-=0.6");
 
-  gsap.registerPlugin(ScrollTrigger);
 
-  gsap.utils.toArray(".about-us .container").forEach((container) => {
+  gsap.from(".container1 .text", {
+    x: -100,
+    opacity: 0,
+    duration: 0.8,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".container1",
+      start: "top 75%",
+      end: "top 30%",
+      scrub: 1
+    }
+  });
+  gsap.from(".container1 .cover1", {
+    x: -100,
+    opacity: 0,
+    duration: 0.8,
+    ease: "power2.out",
 
-    gsap.from(container.children, {
-      y: 50,
-      opacity: 0,
-      duration: 0.8,
-      ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".container1",
+      start: "top 75%",
+      end: "top 30%",
+      scrub: true
+    }
+  });
 
-      scrollTrigger: {
-        trigger: container,
-        start: "top 85%",
-        once: true
-      }
-    });
+  gsap.from(".container2 .text", {
+    x: 100,
+    opacity: 0,
+    duration: 0.8,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".container2",
+      start: "top 75%",
+      end: "top 30%",
+      scrub: 1
+    }
+  });
+  gsap.from(".container2 .cover1", {
+    x: -100,
+    opacity: 0,
+    duration: 0.8,
+    ease: "power2.out",
 
+    scrollTrigger: {
+      trigger: ".container2",
+      start: "top 75%",
+      end: "top 30%",
+      scrub: true
+    }
   });
 
 }

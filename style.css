@@ -342,6 +342,7 @@ header .menu-bar {
   justify-content: space-between;
   gap: 4rem;
   margin-bottom: 6rem;
+  min-height: 50vh;
 }
 
 .container .text {

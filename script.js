@@ -64,7 +64,7 @@ function navAnimation() {
     }
   });
   gsap.from(".container1 .cover1", {
-    x: -100,
+    x: 100,
     opacity: 0,
     duration: 0.8,
     ease: "power2.out",

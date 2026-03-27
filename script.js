@@ -52,54 +52,42 @@ function navAnimation() {
 
 
   gsap.from(".container1 .text", {
-    x: -100,
     opacity: 0,
-    duration: 0.8,
-    ease: "power2.out",
+    y: 50,
+    duration: 1,
     scrollTrigger: {
       trigger: ".container1",
-      start: "top 75%",
-      end: "top 30%",
-      scrub: 1
+      start: "top 80%",
     }
   });
-  gsap.from(".container1 .cover1", {
-    x: 100,
-    opacity: 0,
-    duration: 0.8,
-    ease: "power2.out",
 
+  gsap.from(".container1 .cover1", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
     scrollTrigger: {
       trigger: ".container1",
-      start: "top 75%",
-      end: "top 30%",
-      scrub: true
+      start: "top 70%",
     }
   });
 
   gsap.from(".container2 .text", {
-    x: 100,
     opacity: 0,
-    duration: 0.8,
-    ease: "power2.out",
+    y: 50,
+    duration: 1,
     scrollTrigger: {
       trigger: ".container2",
-      start: "top 75%",
-      end: "top 30%",
-      scrub: 1
+      start: "top 80%",
     }
   });
-  gsap.from(".container2 .cover1", {
-    x: -100,
-    opacity: 0,
-    duration: 0.8,
-    ease: "power2.out",
 
+  gsap.from(".container2 .cover1", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
     scrollTrigger: {
       trigger: ".container2",
-      start: "top 75%",
-      end: "top 30%",
-      scrub: true
+      start: "top 70%",
     }
   });
 

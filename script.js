@@ -57,7 +57,7 @@ function navAnimation() {
     duration: 1,
     scrollTrigger: {
       trigger: ".container1",
-      start: "top 80%",
+      start: "top 90%",
     }
   });
 
@@ -67,7 +67,7 @@ function navAnimation() {
     duration: 1,
     scrollTrigger: {
       trigger: ".container1",
-      start: "top 70%",
+      start: "top 90%",
     }
   });
 
@@ -77,7 +77,7 @@ function navAnimation() {
     duration: 1,
     scrollTrigger: {
       trigger: ".container2",
-      start: "top 80%",
+      start: "top 90%",
     }
   });
 
@@ -87,7 +87,7 @@ function navAnimation() {
     duration: 1,
     scrollTrigger: {
       trigger: ".container2",
-      start: "top 70%",
+      start: "top 90%",
     }
   });
 

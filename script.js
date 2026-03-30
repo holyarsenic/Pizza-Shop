@@ -93,6 +93,9 @@ function navAnimation() {
 
 }
 
+navAnimation();
+
+
 function cursor() {
   const cursorCircle = document.querySelector(".cursor");
 
@@ -118,8 +121,6 @@ function cursor() {
 }
 
 cursor();
-navAnimation();
-
 
 
 const menuButton = document.querySelector(".resposive-nab");

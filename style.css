@@ -22,7 +22,7 @@ body {
   top: 0;
   left: 0;
   transition: transform 0.15s ease-out;
-  display: none;
+  opacity: 0;
 }
 
 .nav {
@@ -74,7 +74,7 @@ a {
   background-color: rgb(196, 61, 61);
 }
 
-.nav .resposive-nab {
+.nav .responsive-nav {
   display: none;
 }
 
@@ -541,7 +541,7 @@ header .menu-bar {
     right: 20%;
   }
 
-  .nav .resposive-nab {
+  .nav .responsive-nav {
     display: flex;
     color: white;
   }
@@ -624,7 +624,6 @@ header .menu-bar {
     background: #111;
   }
 
-
   .container {
     flex-direction: column;
     align-items: center;
@@ -689,5 +688,9 @@ header .menu-bar {
     text-align: center;
     padding: 0.6rem;
     border-radius: 8px;
+  }
+
+  .cursor {
+    display: none;
   }
 }

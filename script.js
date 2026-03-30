@@ -51,60 +51,13 @@ function navAnimation() {
     }, "-=0.6");
 
 
-  gsap.from(".container1 .text", {
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".container1",
-      start: "top 90%",
-      markers: true
-    }
-  });
-
-  gsap.from(".container1 .cover1", {
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".container1",
-      start: "top 90%",
-      markers: true
-    }
-  });
-
-  gsap.from(".container2 .text", {
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".container1",
-      start: "top 90%",
-      markers: true
-    }
-  });
-
-  gsap.from(".container2 .cover1", {
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".container1",
-      start: "top 90%",
-
-    }
-  });
-
 }
-
-navAnimation();
-
 
 function cursor() {
   const cursorCircle = document.querySelector(".cursor");
 
   window.addEventListener("mousemove", (dets) => {
-    cursorCircle.style.display = `flex`;
+    cursorCircle.style.opacity = 1;
     cursorCircle.style.transform =
       `translate(${dets.clientX}px, ${dets.clientY}px)`;
   });
@@ -125,9 +78,11 @@ function cursor() {
 }
 
 cursor();
+navAnimation();
 
 
-const menuButton = document.querySelector(".resposive-nab");
+
+const menuButton = document.querySelector(".responsive-nav ");
 const menuBar = document.querySelector(".menu-bar");
 const menuTab = document.querySelector(".resp-tabs .resp-tab");
 

@@ -78,7 +78,7 @@ function navAnimation() {
     y: 50,
     duration: 1,
     scrollTrigger: {
-      trigger: ".container2",
+      trigger: ".container1",
       start: "top 90%",
       markers: true
     }
@@ -89,9 +89,9 @@ function navAnimation() {
     y: 50,
     duration: 1,
     scrollTrigger: {
-      trigger: ".container2",
+      trigger: ".container1",
       start: "top 90%",
-      markers: true
+
     }
   });
 
